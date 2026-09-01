@@ -7,11 +7,14 @@
 </head>
 <body>
     <script>
-    let name = "vikas";
-let last = "chaudhary";
-let upperName = name.toUpperCase();
-console.log(upperName);
-document.body.innerHTML = upperName;
-</script>
+        let name = "vikas";
+        let last = "chaudhary";
+        let upperName = name.toUpperCase();
+        let lowerLast = last.toLowerCase();
+        let firstChar = name.charAt(0);
+
+        console.log(upperName);
+        document.body.innerHTML = upperName + " " + lowerLast + " (First char: " + firstChar + ")";
+    </script>
 </body>
 </html>

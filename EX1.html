@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Product Object</title>
+</head>
+<body>
+
+<script>
+
+let ABES = {
+
+    
+    productId: 101,
+    productName: "Laptop",
+    price: 50000,
+    quantity: 2,
+
+    
+    calculateTotalPrice: function() {
+        return this.price * this.quantity;
+    },
+
+    
+    updateQuantity: function(newQuantity) {
+        this.quantity = newQuantity;
+    },
+
+    
+    displayProduct: function() {
+        document.write("<h2>Product Information</h2>");
+        document.write("Product ID: " + this.productId + "<br>");
+        document.write("Product Name: " + this.productName + "<br>");
+        document.write("Price: ₹" + this.price + "<br>");
+        document.write("Quantity: " + this.quantity + "<br>");
+        document.write("Total Price: ₹" + this.calculateTotalPrice() + "<br>");
+    }
+};
+
+ABES.updateQuantity(5);
+
+document.write("<h2>After Updating Quantity</h2>");
+
+
+ABES.displayProduct();
+
+</script>
+
+</body>
+</html> -->
+
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+let sbi = {
+    name: "ANAND",
+    acno: 2503215300026,
+    ACB: 500000,
+
+    deposit: function(amount) {
+        this.ACB = this.ACB + amount;
+    },
+
+    withdraw: function(amount) {
+
+        if (amount > this.ACB) {
+            document.write("Insuf Balance<br>");
+        }
+          else {
+            this.ACB = this.ACB - amount;
+            document.write("Withdrawal Sful<br>");
+            document.write("Current Balance: " + this.ACB);
+        }
+    }
+};
+
+let amount = Number(prompt("Enter withdrawal amount"));
+
+sbi.withdraw(amount)
+
+</script>
+
+</body>
+</html>
+```
