@@ -20,16 +20,28 @@
 //     return`${marks}`;
 // }
 // physics=(marks)=>return`${marks}`;
-function sum(...value)
+// function sum(...value)
+// {
+//     let total=0
+//     for(let n of value)
+// {
+//     total=total+n;
+// }
+// return total;
+// }
+// console.log (sum(10,20,30));
+ function sum(name,...value)
 {
-    let total=0
+    let total=0;
     for(let n of value)
 {
     total=total+n;
 }
-return total;
+console.log("name:",name);
+console.log("total",total);
 }
-console.log (sum(10,20,30));
+console.log(sum("aditya",10,20,30));
+
      </script>
 </body> 
 </html>
