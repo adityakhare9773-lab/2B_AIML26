@@ -15,11 +15,21 @@
 //      }
 // let name = `Hello ${FullName(firstName, LastName)}`;
 //      console.log(name);
-function physics(marks)
-{
-    return`${marks}`;
-}
+// function physics(marks)
+// {
+//     return`${marks}`;
+// }
 // physics=(marks)=>return`${marks}`;
+function sum(...value)
+{
+    let total=0
+    for(let n of value)
+{
+    total=total+n;
+}
+return total;
+}
+console.log (sum(10,20,30));
      </script>
-</body>
-</html>>
+</body> 
+</html>
