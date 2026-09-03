@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Object</title>
+</head>
+
+<body>
+
+   
+         <!-- 1. OBJECT LITERAL
+         
+
+    
+    <script>
+
+        let student = {
+            First: "ANAND",
+            Last: "RAI",
+            Age: 21,
+            rollNo: 250321530026,
+            Address: "LAXMI NAGAR DELHI",
+            Cgpa: 9,
+
+            details: function() {
+                document.write("Student Details");
+            },
+
+            Subject: ["web", "c++", "js"]
+        };
+
+        console.log(student.First);
+        console.log(student.Last);
+        console.log(student.Cgpa);
+
+        student.details();
+
+        console.log(student.Subject[1]);
+
+    </script>
+    -->
+
+
+<!--     
+         2. OBJECT USING new Object() -->
+    
+
+    <!--
+    <script>
+
+        let Student = new Object();
+
+        Student.First = "ANAND";
+        Student.Last = "RAI";
+        Student.Age = 21;
+        Student.rollNo = 250321530026;
+        Student.Address = "LAXMI NAGAR DELHI";
+        Student.Cgpa = 9;
+
+        Student.Subject = ["web", "c++", "js"];
+
+        Student.details = function() {
+            document.write("Student Details");
+        };
+
+        console.log(Student.First);
+        console.log(Student.Last);
+        console.log(Student.Cgpa);
+
+        Student.details();
+
+        console.log(Student.Subject[1]);
+
+    </script>
+    -->
+
+
+
+    <!-- <script>
+
+        // Function Constructor
+        function Student(name, className, rollno, pincode, cgpa, city) {
+
+            this.name = name;
+            this.class = className;
+            this.rollno = rollno;
+            this.pincode = pincode;
+            this.cgpa = cgpa;
+            this.city = city;
+
+            
+            this.display = function () {
+                console.log(this.name);
+            };
+        }
+
+
+        
+
+        let student1 = new Student(
+            "Rahul",
+            "B.Tech",
+            101,
+            201001,
+            8.5,
+            "Ghaziabad"
+        );
+
+        let student2 = new Student(
+            "Aman",
+            "B.Tech",
+            102,
+            201002,
+            7.9,
+            "Delhi"
+        );
+
+        let student3 = new Student(
+            "Priya",
+            "B.Tech",
+            103,
+            201301,
+            9.1,
+            "Noida"
+        );
+
+        let student4 = new Student(
+            "Neha",
+            "B.Tech",
+            104,
+            226001,
+            8.7,
+            "Lucknow"
+        );
+
+
+        
+
+        student1.display();
+        student2.display();
+        student3.display();
+        student4.display();
+
+
+        
+
+      
+    </script> -->
+<script>
+
+    class student {
+        Constructor (name ,pincode){
+            this.name = name;
+            this.pincode = pincode;
+
+
+        }
+        display () {
+        console.log(this.name);
+        console.log(this.pincode);
+        }
+    }
+    let s1= new student ( "anand", 202020);
+    let s2= new student ( "karan", 202032 );
+
+    s1.display();
+    s2.display();
+
+    delete student.name
+
+      delete student.pincode
+</script>
+</body>
+
+</html>
