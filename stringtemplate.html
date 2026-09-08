@@ -50,14 +50,19 @@
 // }
 // console.log(data.name)
 // console.log(data.RollNumber)
-let name = "student";
-
-let data = {
-    [name]: "Aditya",
-    course: "btech"
-};
-
-console.log(data.name);
+let F="first";
+let L="last";
+let data=
+{
+    [F]:"viksh",
+    [L]:"chaudhary",
+    show()
+    {
+        console.log(this.first)
+        console.log(this.last)
+    }
+}
+data.show();
      </script>
 </body> 
 </html>
