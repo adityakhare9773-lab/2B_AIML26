@@ -30,17 +30,28 @@
 // return total;
 // }
 // console.log (sum(10,20,30));
- function sum(name,...value)
+//  function sum(name,...value)
+// {
+//     let total=0;
+//     for(let n of value)
+// {
+//     total=total+n;
+// }
+// console.log("name:",name);
+// console.log("total",total);
+// }
+// console.log(sum("aditya",10,20,30));
+function sum(...values)
 {
-    let total=0;
-    for(let n of value)
+    let sum=0;
+    for(let i in values)
 {
-    total=total+n;
+    sum=sum+values[i]
 }
-console.log("name:",name);
-console.log("total",total);
-}
-console.log(sum("aditya",10,20,30));
+console.log(sum);
+};
+vet ar=[10,20,30,40]
+sum(...ar;
 
      </script>
 </body> 
