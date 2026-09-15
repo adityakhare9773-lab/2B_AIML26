@@ -185,25 +185,21 @@
     console.log(h.faculty);
 
 </script> -->
+<!-- 
+ -->
 <script>
-   class student {
-    constructor(roll, name, year) {
-        this.rollnumber = roll;
-        this.name = name;
-        this.year = year; // Fixed: changed 'years' to 'year'
-
-        console.log(this.rollnumber); // Fixed typo
-        console.log(this.name);       // Fixed typo
-        console.log(this.year);
+    class student{
+       static Fname="vikash"
+      static   Lname="chaudhari"
+         display()
+        {
+            console.log(student.Fname);
+            console.log(student.Lname);
+        }
     }
-}
-
-// Declared variables using 'let'
-let s1 = new student();
-let s2 = new student(101, "vikas", "2nd");
-let s3 = new student(102, "vivek", "2nd");
-         
-
+    // student.display();
+    let s1=new student();
+    s1.display();
 </script>
 </body>
 
