@@ -187,7 +187,7 @@
 </script> -->
 <!-- 
  -->
-<script>
+<!-- <script>
     class student{
        static Fname="vikash"
       static   Lname="chaudhari"
@@ -200,6 +200,24 @@
     // student.display();
     let s1=new student();
     s1.display();
+</script> -->
+<script>
+    class hello 
+    {
+        constructor()
+        {
+            console.log("hello constructor");
+        }
+    }
+    class hi extends hello
+    {
+        constructor()
+        {
+            super()
+            console.log("hi constructor");
+        }
+    }
+    let h=new hi();
 </script>
 </body>
 
