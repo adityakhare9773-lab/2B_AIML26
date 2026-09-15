@@ -172,7 +172,7 @@
 
       delete student.pincode
 </script> -->
-<script>
+<!-- <script>
     class hello
     {
         constructor()
@@ -183,6 +183,26 @@
     }
     let h = new hello();
     console.log(h.faculty);
+
+</script> -->
+<script>
+   class student {
+    constructor(roll, name, year) {
+        this.rollnumber = roll;
+        this.name = name;
+        this.year = year; // Fixed: changed 'years' to 'year'
+
+        console.log(this.rollnumber); // Fixed typo
+        console.log(this.name);       // Fixed typo
+        console.log(this.year);
+    }
+}
+
+// Declared variables using 'let'
+let s1 = new student();
+let s2 = new student(101, "vikas", "2nd");
+let s3 = new student(102, "vivek", "2nd");
+         
 
 </script>
 </body>
