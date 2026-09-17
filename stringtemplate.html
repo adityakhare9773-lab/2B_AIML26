@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script> -->
     // let firstName="Aditya"
     //  let LastName="khare"
     //  function FullName(First,Last)
@@ -52,18 +52,53 @@
 // console.log(data.RollNumber)
 let F="first";
 let L="last";
-let data=
-{
-    [F]:"viksh",
-    [L]:"chaudhary",
-    show()
-    ''
+// let data=
+// {
+//     [F]:"viksh",
+//     [L]:"chaudhary",
+//     show()
+//     ''
+//     {
+//         console.log(this.first)
+//         console.log(this.last)
+//     }
+// }
+// data.show();
+<script>
+ class student{
+    static count=0;
+    constructor(roll,name,marks)
     {
-        console.log(this.first)
-        console.log(this.last)
+        this.rollNumbers=roll;
+        this.Name=name;
+        this.marks=marks;
+        count++;
     }
-}
-data.show();
-     </script>
+    display()
+    {
+
+    
+        onsole.log(this.rollNumber);
+        console.log(this.name);
+        console.log(this.marks);
+        if(this.marks>=35)
+    {
+        cosole.log("pass")
+    }
+    else
+    {
+        console.log("fail");
+    }
+    }
+ }
+ let s1=new student(12);
+ let s2=new student(45);
+ let s3=new student(92);
+ s1.display();
+ s2.display();
+ s3.display();
+ console.log(student.count);
+</script>
+
 </body> 
 </html>
