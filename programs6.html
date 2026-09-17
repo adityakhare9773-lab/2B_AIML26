@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
  class student{
     static count=0;
     constructor(roll,name,marks)
@@ -40,6 +40,57 @@
  s2.display();
  s3.display();
  console.log(student.count);
+</script> -->
+<script>
+    class bankaccount
+    {
+        static bankinfo(){
+            console.log("BAnk Name: gandmara bank");
+            console.log("lutera bank");
+        }
+        constructor(accountnumber,holdername,balance)
+        {
+            this.accountnumber=accountnumber;
+            this.holdername=holdername;
+            this.balance=balance;
+            bankaccount.count++;
+        }
+      deposit(amount){
+        this.balance=this.balance+amount;
+        console.log("deposited successfully");
+        console.log(this.balance);
+      }
+      withdraw(amount){
+        if(amount<=this.balance)
+    {
+    this.balance=this.balance-amount;
+    console.log("withdraw successfully");
+     }
+    else
+    {
+    console.log("insufficient amount");
+    }
+        console.log(this.balance);
+    }
+      displaybalance()
+      {
+      console.log(this.accountholder);
+      console.log(this.holdername);
+      console.log(this.balance);
+      }
+
+    }
+    bankaccount.bankinfo();
+    let s1=new bankaccount(1234,"aditya",123345);
+    let s2=new bankaccount(6543,"anand",0);
+    let s3=new bankaccount(123445,"aditi",1);
+
+    console.log("account");
+    s1.displaybalance();
+    s1.deposite(500);
+    s1.withdraw(400);
+    s1.displaybalance();
+
 </script>
     
 </body>
