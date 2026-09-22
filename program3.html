@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            constructor( idno, name, salary){
+
+            
+            this.idno=idno;
+            this.name=name;
+            this.salary=salary;
+        }
+    }
+    
+        class Mag extends Employee{
+            constructor(id,name,salary,inc){
+                super(id,name,salary)
+                this.inc=inc;
+            }
+        
+            Calculatesalary(){
+            return this.salary+this.inc
+            }
+        }
+    
+        let s=new Employee(2,"ud",200)
+        let s2=new Mag(3,"raa",200,300)
+        console.log(s);
+        console.log(s2);
+        console.log(s2.Calculatesalary());
+
+    </script>
+</body>
+</html>
